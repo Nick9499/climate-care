@@ -35,21 +35,27 @@ import actNow from "/act_now.png";
     <Layout>
       <div>
         <div class="container mx-auto mt-28">
-          <h1 class="text-center font-[500] text-[90px] font-bigCaslon">
+          <h1
+            class="text-center font-[500] text-[32px] leadin-[38.69px] md:leading-[108.81px] md:text-[90px] font-bigCaslon">
             We propel solutions that address the climate crisis
           </h1>
         </div>
-        <img class="mt-28 h-[653px]" src={pexelsJonasVvonWerne} alt="" />
+        <img
+          class="mt-28 h-[263px] w-full md:h-[653px]"
+          src={pexelsJonasVvonWerne}
+          alt=""
+        />
       </div>
 
-      <div class="flex px-20 mt-28 mb-28">
-        <div>
+      <div
+        class="flex flex-col md:flex-row px-10 mt-20 mb-20 md:px-20 md:mt-28 md:mb-28">
+        <div class="mb-10 md:mb-0">
           <h1
-            class="font-bigCaslon font-[500] text-[44px] leading-[53.2px] w-2/3 mb-5">
+            class="font-bigCaslon font-[500] text-[30px] md:text-[44px] leading-[36.27px] md:leading-[53.2px] md:w-2/3 mb-5">
             Securing tomorrow, together.
           </h1>
           <p
-            class="font-inter w-2/3 font-[500] text-[16px] leading-[22px] text-justify mb-2">
+            class="font-inter md:w-2/3 font-[500] text-[16px] leading-[22px] text-justify mb-2">
             We’re a group of entrepreneurs, engineers, economists and
             environmentalists leveraging technology to make this world a better
             place. We support knowledge economies around climate-solutions
@@ -79,9 +85,9 @@ import actNow from "/act_now.png";
           alt="securing tommorrow together"
         />
       </div>
-      <div class="container mx-auto">
+      <div class="container p-10 md:p-0 md:mx-auto">
         <p
-          class="font-inter font-[600] text-[22px] leading-[32px] text-justify">
+          class="font-inter font-[600] text-[16px] md:text-[22px] leading-[24px] md:leading-[32px] text-justify">
           To prevent the worst effects of climate change, we must reduce the
           amount of greenhouse gases we release into the atmosphere. Currently,
           we emit around 51 billion tons of these gases every year. However, our
@@ -91,15 +97,15 @@ import actNow from "/act_now.png";
           ever seen before.
         </p>
       </div>
-      <div class="mt-20 container mx-auto">
-        <div class="flex mb-10">
+      <div class="mt-20 container md:mx-auto">
+        <div class="flex mb-10 mx-10">
           <img src={projectInitiative} alt="project initiative" />
           <h2
-            class="w-1/6 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
+            class="w-1/2 md:w-1/6 ml-2 font-[600] text-[16px] md:text-[20px] leading-[19.36px] md:leading-[24.2px] font-inter">
             PROJECTS & INITIATIVES
           </h2>
         </div>
-        <div class="grid grid-cols-3">
+        <div class="grid md:grid-cols-3">
           <Card
             title="Carbon-negative construction bricks"
             imageUrl={carbonNegativeConstructionBricks}
@@ -156,11 +162,11 @@ import actNow from "/act_now.png";
       </div>
       <div class="mt-28">
         <h3
-          class="font-bigCaslon font-[500] text-[44px] leading-[53.2px] text-center">
+          class="font-bigCaslon font-[500] text-[30px] md:text-[44px] leading-[36.27px] md:leading-[53.2px] text-center mx-5 md:mx-0">
           Journey from science to action
         </h3>
-        <div class="mt-20 grid mx-auto container grid-cols-3 gap-5">
-          <div class="font-bigCaslon">
+        <div class="mt-20 grid md:mx-auto container md:grid-cols-3 gap-5">
+          <div class="font-bigCaslon flex flex-col items-center">
             <img src={scienceBackedSolutions} alt="science backed solutions" />
             <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
               Science-backed solutions
@@ -170,7 +176,7 @@ import actNow from "/act_now.png";
               that have the caliber to change our status-quo with climate.
             </p>
           </div>
-          <div class="font-bigCaslon">
+          <div class="font-bigCaslon flex flex-col items-center">
             <img src={rapidPrototyping} alt="rapid prototyping" />
             <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
               Rapid prototyping
@@ -181,7 +187,7 @@ import actNow from "/act_now.png";
               the ambition and speed of a start-up.
             </p>
           </div>
-          <div class="font-bigCaslon">
+          <div class="font-bigCaslon flex flex-col items-center">
             <img src={supportToScale} alt="support to scale" />
             <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
               Support to scale
@@ -210,7 +216,7 @@ import actNow from "/act_now.png";
           </button>
         </div>
       </div>
-      <div
+      <!-- <div
         class="m-28 p-20 h-screen bg-contain bg-no-repeat"
         style=`background-image: url(${pexelsQuangNguyenVinh});`>
         <div class="p-[30px] bg-white flex w-1/2 mt-96">
@@ -233,15 +239,15 @@ import actNow from "/act_now.png";
             </svg></button
           >
         </div>
-      </div>
-      <div class="flex mx-32">
+      </div> -->
+      <div class="hidden md:flex mx-32">
         <img src={projectInitiative} alt="project initiative" />
         <h2
           class="w-1/12 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
           SUPPORT US
         </h2>
       </div>
-      <div class="grid grid-cols-3 m-28 mt-5">
+      <div class="grid md:grid-cols-3 md:m-28 mt-10 md:mt-5">
         <SupportCard>
           <img
             src={scalableSolutions}
@@ -252,7 +258,7 @@ import actNow from "/act_now.png";
             Focus on innovative & scalable solutions
           </h5>
           <p
-            class="font-inter font-[500] text-[16px] leading-[22px] text-justify tet-[#505050] mb-20">
+            class="font-inter font-[500] text-[16px] leading-[22px] text-justify text-[#505050] mb-20">
             All donations support people working on the ground on initiatives
             vetted by our team of experts for high-impact factors.
           </p>
@@ -267,7 +273,7 @@ import actNow from "/act_now.png";
             100% transparency for 100% of donations
           </h5>
           <p
-            class="font-inter font-[500] text-[16px] leading-[22px] text-justify tet-[#505050] mb-20">
+            class="font-inter font-[500] text-[16px] leading-[22px] text-justify text-[#505050] mb-20">
             99% of your donation directly supports our carefully audited,
             high-impact projects. 1% covers our administration costs. That's it.
             No hidden fees.

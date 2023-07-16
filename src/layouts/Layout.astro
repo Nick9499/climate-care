@@ -29,13 +29,14 @@ import Footer from "../components/footer.astro";
           <ul
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-
-            <li><a>Item 3</a></li>
+            <li><a>About</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Resources</a></li>
+            <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl"
-          ><img class="w-2/3" src={Logo} alt="Logo" /></a
+        <a class="btn btn-ghost normal-case"
+          ><img class="w-full md:w-2/3" src={Logo} alt="Logo" /></a
         >
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -46,7 +47,7 @@ import Footer from "../components/footer.astro";
           <li><a>Contact</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
+      <div class="navbar-end hidden md:flex">
         <a class="btn"><img src={SupportUs} class="w-2/3" alt="support us" /></a
         >
       </div>

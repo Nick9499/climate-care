@@ -6,59 +6,108 @@ import email from "/email.svg";
 import twitter from "/twitter.svg";
 ---
 
-<div class="bg-[#133244] p-10 pl-20">
+<div class="bg-[#133244] p-10 md:pl-20">
   <div class="flex text-white pb-10">
     <img src={quickLinks} alt="project initiative" />
-    <h2 class="w-1/12 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
+    <h2
+      class="w-1/12 ml-3 md:ml-2 font-[600] text-[16px] md:text-[20px] leading-[19.36px] md:leading-[24.2px] font-inter">
       QUICK LINKS
     </h2>
   </div>
-  <div class="grid grid-cols-5">
+  <div class="md:flex hidden">
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFCDCD] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFCDCD] underline underline-offset-1 mr-5"
       >Submit an idea</a
     >
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CDEDFF] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CDEDFF] underline underline-offset-1 mr-5"
       >Our approach</a
     >
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#EFCDFF] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#EFCDFF] underline underline-offset-1 mr-5"
       >Our team</a
     >
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFD39F] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFD39F] underline underline-offset-1 mr-5"
       >Framework for responsible investing</a
     >
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#E9FFA8] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#E9FFA8] underline underline-offset-1 mr-5"
       >Blog</a
     >
+  </div>
+  <div class="md:flex hidden mt-6">
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CCB4FF] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CCB4FF] underline underline-offset-1 mr-5"
       >Contact Us</a
     >
     <a
       href=""
-      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FDB4FF] underline underline-offset-1"
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FDB4FF] underline underline-offset-1 mr-5"
       >Our framework</a
     >
   </div>
-  <div class="mt-20 flex">
+  <div class="block md:hidden">
+    <div class="flex mb-3">
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#FFCDCD] underline underline-offset-1 mr-3"
+        >Submit an idea</a
+      >
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#CDEDFF] underline underline-offset-1"
+        >Our approach</a
+      >
+    </div>
+    <div class="mb-3">
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#EFCDFF] underline underline-offset-1"
+        >Our team</a
+      >
+    </div>
+    <div class="mb-3">
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#FFD39F] underline underline-offset-1"
+        >Framework for responsible investing</a
+      >
+    </div>
+    <div class="flex">
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#E9FFA8] underline underline-offset-1 mr-5"
+        >Blog</a
+      >
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#CCB4FF] underline underline-offset-1 mr-5"
+        >Contact Us</a
+      >
+      <a
+        href=""
+        class="font-inter font-[400] text-[16px] leading-[19.36px] text-[#FDB4FF] underline underline-offset-1 mr-5"
+        >Our framework</a
+      >
+    </div>
+  </div>
+  <div class="mt-20 flex flex-col md:flex-row">
     <div>
       <p
-        class="font-inter font-[400] text-[22px] leading-[26.63px] text-white pb-10">
+        class="font-inter font-[400] text-[18px] md:text-[22px] leading-[21.78px] md:leading-[26.63px] text-white pb-10">
         Sign up for the CCF Dispatch, a monthly digest of what we're thinking,
         learning, and looking to do next.
       </p>
       <form class="w-full max-w-sm">
-        <div class="flex items-center border-b border-teal-500 py-2 mb-16">
+        <div
+          class="flex items-center border-b border-teal-500 py-2 mb-5 md:mb-16">
           <input
             class="appearance-none bg-transparent border-none w-full text-[#FFFFFF52] mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
@@ -70,15 +119,17 @@ import twitter from "/twitter.svg";
           </button>
         </div>
       </form>
-      <small
-        class="font-inter font-[500] text-[16px] leading-[19.36px] text-[#337196]"
-        >2050 Climate Care Foundation ©2023 (CIN U72900JDGE76NPL093525)</small
-      >
     </div>
-    <div class="grid grid-cols-3 gap-5 mt-16">
+    <div class="grid grid-cols-3 md:gap-5 md:mt-16 mb-5">
       <img src={linkedIn} alt="linkedIn" class="w-[40px] h-[40px]" />
       <img src={email} alt="email" class="w-[40px] h-[40px]" />
       <img src={twitter} alt="twitter" class="w-[40px] h-[40px]" />
     </div>
+  </div>
+  <div>
+    <small
+      class="font-inter font-[500] text-[16px] leading-[19.36px] text-[#337196]"
+      >2050 Climate Care Foundation ©2023 (CIN U72900JDGE76NPL093525)</small
+    >
   </div>
 </div>
