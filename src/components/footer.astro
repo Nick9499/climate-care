@@ -1,0 +1,84 @@
+---
+import quickLinks from "/quick_links.svg";
+import submit from "/submit.svg";
+import linkedIn from "/linkedIn.svg";
+import email from "/email.svg";
+import twitter from "/twitter.svg";
+---
+
+<div class="bg-[#133244] p-10 pl-20">
+  <div class="flex text-white pb-10">
+    <img src={quickLinks} alt="project initiative" />
+    <h2 class="w-1/12 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
+      QUICK LINKS
+    </h2>
+  </div>
+  <div class="grid grid-cols-5">
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFCDCD] underline underline-offset-1"
+      >Submit an idea</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CDEDFF] underline underline-offset-1"
+      >Our approach</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#EFCDFF] underline underline-offset-1"
+      >Our team</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FFD39F] underline underline-offset-1"
+      >Framework for responsible investing</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#E9FFA8] underline underline-offset-1"
+      >Blog</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#CCB4FF] underline underline-offset-1"
+      >Contact Us</a
+    >
+    <a
+      href=""
+      class="font-inter font-[400] text-[28px] leading-[33.89px] text-[#FDB4FF] underline underline-offset-1"
+      >Our framework</a
+    >
+  </div>
+  <div class="mt-20 flex">
+    <div>
+      <p
+        class="font-inter font-[400] text-[22px] leading-[26.63px] text-white pb-10">
+        Sign up for the CCF Dispatch, a monthly digest of what we're thinking,
+        learning, and looking to do next.
+      </p>
+      <form class="w-full max-w-sm">
+        <div class="flex items-center border-b border-teal-500 py-2 mb-16">
+          <input
+            class="appearance-none bg-transparent border-none w-full text-[#FFFFFF52] mr-3 py-1 px-2 leading-tight focus:outline-none"
+            type="text"
+            placeholder="Email address"
+            aria-label="Full name"
+          />
+          <button class="" type="button">
+            <img src={submit} alt="submit" />
+          </button>
+        </div>
+      </form>
+      <small
+        class="font-inter font-[500] text-[16px] leading-[19.36px] text-[#337196]"
+        >2050 Climate Care Foundation ©2023 (CIN U72900JDGE76NPL093525)</small
+      >
+    </div>
+    <div class="grid grid-cols-3 gap-5 mt-16">
+      <img src={linkedIn} alt="linkedIn" class="w-[40px] h-[40px]" />
+      <img src={email} alt="email" class="w-[40px] h-[40px]" />
+      <img src={twitter} alt="twitter" class="w-[40px] h-[40px]" />
+    </div>
+  </div>
+</div>

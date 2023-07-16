@@ -1,15 +1,297 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
+import SupportCard from "../components/supportCard.astro";
+import pexelsJonasVvonWerne from "/pexels-jonas-von-werne.png";
+import securingTomorrowTogether from "/securing_tomorrow_together.png";
+import projectInitiative from "/project_initiative.svg";
+import carbonNegativeConstructionBricks from "/carbon_negative_construction_bricks.png";
+import pinkDot from "/pink_dot.svg";
+import bioHamam from "/bio_hamam.png";
+import waterpurifierBottol from "/water_purifier_bottol.png";
+import greenDot from "/green_dot.png";
+import zeroWasteSchool from "/zero_waste_school.png";
+import co2Industry from "/co2_industry.png";
+import openDataClimate from "/open_data_climate.png";
+import yellowDot from "/yellow_dot.svg";
+import scienceBackedSolutions from "/science_backed_solutions.svg";
+import rapidPrototyping from "/rapid_prototyping.svg";
+import supportToScale from "/support_to_scale.svg";
+import pexelsQuangNguyenVinh from "/pexels-quang-nguyen-vinh.png";
+import scalableSolutions from "/scalable_solutions.svg";
+import transparentDonation from "/transparent_donations.svg";
+import actNow from "/act_now.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Climate Care</title>
+  </head>
+  <body class="bg-[#F2F2F2]">
+    <Layout>
+      <div>
+        <div class="container mx-auto mt-28">
+          <h1 class="text-center font-[500] text-[90px] font-bigCaslon">
+            We propel solutions that address the climate crisis
+          </h1>
+        </div>
+        <img class="mt-28 h-[653px]" src={pexelsJonasVvonWerne} alt="" />
+      </div>
+
+      <div class="flex px-20 mt-28 mb-28">
+        <div>
+          <h1
+            class="font-bigCaslon font-[500] text-[44px] leading-[53.2px] w-2/3 mb-5">
+            Securing tomorrow, together.
+          </h1>
+          <p
+            class="font-inter w-2/3 font-[500] text-[16px] leading-[22px] text-justify mb-2">
+            We’re a group of entrepreneurs, engineers, economists and
+            environmentalists leveraging technology to make this world a better
+            place. We support knowledge economies around climate-solutions
+            earlier in the process, acting as a catalyst to bring
+            scientifically-proven solutions live in the real world.
+          </p>
+          <a
+            href="/about"
+            class="flex font-inter font-[700] text-[16px] leading-[19.36px] text-[#0476DF] underline underline-offset-1"
+            >About Us <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 ml-1">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+            </svg>
+          </a>
+        </div>
+        <img
+          class="rounded-md"
+          src={securingTomorrowTogether}
+          alt="securing tommorrow together"
+        />
+      </div>
+      <div class="container mx-auto">
+        <p
+          class="font-inter font-[600] text-[22px] leading-[32px] text-justify">
+          To prevent the worst effects of climate change, we must reduce the
+          amount of greenhouse gases we release into the atmosphere. Currently,
+          we emit around 51 billion tons of these gases every year. However, our
+          goal is to reach net-zero emissions by 2050. This ambitious target
+          necessitates revolutionary technological and behavioural advancements
+          across various sectors of our modern world, unlike anything we have
+          ever seen before.
+        </p>
+      </div>
+      <div class="mt-20 container mx-auto">
+        <div class="flex mb-10">
+          <img src={projectInitiative} alt="project initiative" />
+          <h2
+            class="w-1/6 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
+            PROJECTS & INITIATIVES
+          </h2>
+        </div>
+        <div class="grid grid-cols-3">
+          <Card
+            title="Carbon-negative construction bricks"
+            imageUrl={carbonNegativeConstructionBricks}
+            bottomImageUrl={pinkDot}
+            bottomTitle="Ongoing"
+          />
+          <Card
+            title="Bio-hamam for indoor heating in Kashmir"
+            imageUrl={bioHamam}
+            bottomImageUrl={pinkDot}
+            bottomTitle="Ongoing"
+          />
+          <Card
+            title="Water purifying bottle for water-stress/disaster-prone regions"
+            imageUrl={waterpurifierBottol}
+            bottomImageUrl={greenDot}
+            bottomTitle="Completed"
+          />
+          <Card
+            title="Zero-waste schools"
+            imageUrl={zeroWasteSchool}
+            bottomImageUrl={pinkDot}
+            bottomTitle="Ongoing"
+          />
+          <Card
+            title="CO2 industrial capture & utilisation"
+            imageUrl={co2Industry}
+            bottomImageUrl={yellowDot}
+            bottomTitle="Concept-stage"
+          />
+          <Card
+            title="Open-data for climate"
+            imageUrl={openDataClimate}
+            bottomImageUrl={pinkDot}
+            bottomTitle="Ongoing"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <button class="btn btn-info text-[#fff]"
+            >All Projects <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mt-28">
+        <h3
+          class="font-bigCaslon font-[500] text-[44px] leading-[53.2px] text-center">
+          Journey from science to action
+        </h3>
+        <div class="mt-20 grid mx-auto container grid-cols-3 gap-5">
+          <div class="font-bigCaslon">
+            <img src={scienceBackedSolutions} alt="science backed solutions" />
+            <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
+              Science-backed solutions
+            </h5>
+            <p class="font-[400] text-[16px] leading-[22px] text-justify w-2/3">
+              We back scientifically-sound, high-potential, high-risk projects
+              that have the caliber to change our status-quo with climate.
+            </p>
+          </div>
+          <div class="font-bigCaslon">
+            <img src={rapidPrototyping} alt="rapid prototyping" />
+            <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
+              Rapid prototyping
+            </h5>
+            <p class="font-[400] text-[16px] leading-[22px] text-justify w-2/3">
+              We conduct rapid prototyping to validate the technologies and
+              assess their feasibility and impact potential - we operate with
+              the ambition and speed of a start-up.
+            </p>
+          </div>
+          <div class="font-bigCaslon">
+            <img src={supportToScale} alt="support to scale" />
+            <h5 class="mt-5 mb-2 font-[700] text-[18px] leading-[22px]">
+              Support to scale
+            </h5>
+            <p class="font-[400] text-[16px] leading-[22px] text-justify w-2/3">
+              We back projects from lab-to-live stage, helping them to scale the
+              deployment of technologies in the real world. Ultimately, the only
+              factor we are constantly optimising is impact.
+            </p>
+          </div>
+        </div>
+        <div class="mt-20 flex justify-center items-center">
+          <button class="btn btn-info text-[#fff]"
+            >Our Approach <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="m-28 p-20 h-screen bg-contain bg-no-repeat"
+        style=`background-image: url(${pexelsQuangNguyenVinh});`>
+        <div class="p-[30px] bg-white flex w-1/2 mt-96">
+          <p class="font-inter font-[500] text-[18px] leading-[21.78px]">
+            Fast-tracking the progress of groundbreaking technologies that aid
+            in both mitigating and adapting to climate change.
+          </p>
+          <button class="btn btn-info text-[#fff]"
+            >our values <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg></button
+          >
+        </div>
+      </div>
+      <div class="flex mx-32">
+        <img src={projectInitiative} alt="project initiative" />
+        <h2
+          class="w-1/12 ml-2 font-[600] text-[20px] leading-[24.2px] font-inter">
+          SUPPORT US
+        </h2>
+      </div>
+      <div class="grid grid-cols-3 m-28 mt-5">
+        <SupportCard>
+          <img
+            src={scalableSolutions}
+            alt="scalable_solutions"
+            class="w-[33.33px] h-[33.33px] mt-10 mb-3"
+          />
+          <h5 class="font-inter font-[700] text-[18px] leading-[21.78px]">
+            Focus on innovative & scalable solutions
+          </h5>
+          <p
+            class="font-inter font-[500] text-[16px] leading-[22px] text-justify tet-[#505050] mb-20">
+            All donations support people working on the ground on initiatives
+            vetted by our team of experts for high-impact factors.
+          </p>
+        </SupportCard>
+        <SupportCard>
+          <img
+            src={transparentDonation}
+            alt="transparent_donations"
+            class="w-[33.33px] h-[33.33px] mt-10 mb-3"
+          />
+          <h5 class="font-inter font-[700] text-[18px] leading-[21.78px]">
+            100% transparency for 100% of donations
+          </h5>
+          <p
+            class="font-inter font-[500] text-[16px] leading-[22px] text-justify tet-[#505050] mb-20">
+            99% of your donation directly supports our carefully audited,
+            high-impact projects. 1% covers our administration costs. That's it.
+            No hidden fees.
+          </p>
+        </SupportCard>
+        <SupportCard bgUrl={actNow}>
+          <h5
+            class="font-inter font-[900] text-[81.25px] leading-[98.33px] text-white text-center capitalize">
+            Act now
+          </h5>
+          <button
+            class="btn font-inter font-[700] text-[16px] leading-[19.36px]">
+            Donate Now <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6">
+              <path
+                d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+              ></path>
+            </svg>
+          </button>
+        </SupportCard>
+      </div>
+    </Layout>
+  </body>
 </html>
